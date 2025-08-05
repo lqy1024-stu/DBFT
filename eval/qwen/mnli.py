@@ -6,7 +6,7 @@ import json
 import random
 random.seed(42)
 
-with open("../dataset/syn/anli_new.json", 'r', encoding='utf-8') as file:
+with open("../dataset/syn/anli.json", 'r', encoding='utf-8') as file:
     mnli_data = json.load(file)
 
 # random_sample = random.sample(mnli_data, 2000)
@@ -19,7 +19,8 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-lora_path = '/data/liqiuyu/LLaMA-Factory-prompt-enhance/saves/qwen2-lora-updated-mnli-lap-neg/checkpoint-1800'
+# lora权重路径
+lora_path = ''
 
 model = PeftModel.from_pretrained(model, model_id=lora_path)
 
