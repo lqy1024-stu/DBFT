@@ -4,7 +4,7 @@ import logging
 import json
 from peft import PeftModel # type: ignore
 
-with open("../dataset/syn/bbq_ori.json", 'r', encoding='utf-8') as file:
+with open("../dataset/syn/bbq_test.json", 'r', encoding='utf-8') as file:
     bbq_data = json.load(file)
 
 model_name = "/data/opensource_model/Qwen2-7B-Instruct"
