@@ -17,7 +17,8 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-lora_path = '/data/liqiuyu/LLaMA-Factory-news/saves/qwen2-lora-news-checkpoint-200/checkpoint-200'
+# lora权重路径
+lora_path = ''
 
 model = PeftModel.from_pretrained(model, model_id=lora_path)
 
