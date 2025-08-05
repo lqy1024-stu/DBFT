@@ -21,11 +21,8 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-# lora_path = '/data/liqiuyu/LLaMA-Factory-data-enhance/saves/qwen2-lora-enhanced-bbq-5-5/checkpoint-1000'
-
-# lora_path = '/data/liqiuyu/LLaMA-Factory-bbq/saves/qwen2-lora-bbq-5-5/checkpoint-600'
-
-lora_path = '/data/liqiuyu/LLaMA-Factory-prompt-enhance/saves/qwen2-lora-mnli/checkpoint-1800'
+# lora 权重路径
+# lora_path = ''
 model = PeftModel.from_pretrained(model, model_id=lora_path)
 
 logging.basicConfig(
