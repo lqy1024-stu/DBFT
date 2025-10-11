@@ -25,12 +25,12 @@ Note that we reprt the results of mixed bias in NLI task and the results on the 
 Note that we reprt the results of mixed bias in NLI task and the results on the lexical overlap subset of HANS. 
 | Qwen2-1.5B | MNLI | HANS | ANLI | BBQ  | Unqover |
 |-------|--------|--------|--------|--------|--------|
-| BASE   | 71.93  |  69.59 | 75.52  |   |  |
-| LoRA   | 91.14  | 85.91  | 70.30  |   |  |
+| BASE   | 71.93  |  69.59 | 75.52  | 34.20  |  |
+| LoRA   | 91.14  | 84.91  | 70.30  |   |  |
 | $\Delta$ LoRA   |   |   |   |   |  |
 | Ext-sub   |   |   |   |   |  |
 | $DBFT_{prom}$   | 91.17  | 86.87  | 76.61  |   |  |
-| $DBFT_{data}$   |   |   |   |   |  |
+| $DBFT_{data}$   | 90.83  | 85.58  | 75.91  |   |  |
 
 | Qwen2.5-14B | MNLI | HANS | ANLI | BBQ  | Unqover | 
 |-------|--------|--------|--------|--------|--------|
