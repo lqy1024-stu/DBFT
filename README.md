@@ -26,11 +26,11 @@ Note that we reprt the results of mixed bias in NLI task and the results on the 
 | Qwen2-1.5B | MNLI | HANS | ANLI | BBQ  | Unqover |
 |-------|--------|--------|--------|--------|--------|
 | BASE   | 71.93  |  69.59 | 75.52  | 34.20  | 16.14 |
-| LoRA   | 91.14  | 84.91  | 70.30  |   |  |
+| LoRA   | 91.14  | 84.91  | 70.30  | 83.65  | 58.53 |
 | $\Delta$ LoRA   |   |   |   |   |  |
 | Ext-sub   |   |   |   |   |  |
-| $DBFT_{prom}$   | 91.17  | 86.87  | 76.61  |   |  |
-| $DBFT_{data}$   | 90.83  | 85.58  | 75.91  |   |  |
+| $DBFT_{prom}$   | 91.17  | 86.87  | 76.61  | 82.75  | 67.80  |
+| $DBFT_{data}$   | 90.83  | 85.58  | 75.91  | 83.10  | 61.27  |
 
 | Qwen2.5-14B | MNLI | HANS | ANLI | BBQ  | Unqover | 
 |-------|--------|--------|--------|--------|--------|
