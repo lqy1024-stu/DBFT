@@ -21,7 +21,7 @@ Note that we reprt the results of mixed bias in NLI task and the results on the 
 | θ=0.8   | 92.18  | 93.22  | 78.33  | 97.80  | 91.01 |
 | θ=0.9   | 92.30  | 93.50  | 78.56  | 97.85  | 90.75 |
 
-# The results of DBFT on both large (Qwen2.5-14B) and small (Qwen2-1.5B) models, confirming its robustness.
+# The results of DBFT on both small (Qwen2-1.5B) and large (Qwen2.5-14B) models, confirming its robustness.
 Note that we reprt the results of mixed bias in NLI task and the results on the lexical overlap subset of HANS. 
 | Qwen2-1.5B | MNLI | HANS | ANLI | BBQ  | Unqover |
 |-------|--------|--------|--------|--------|--------|
