@@ -34,12 +34,12 @@ Note that we reprt the results of mixed bias in NLI task and the results on the 
 
 | Qwen2.5-14B | MNLI | HANS | ANLI | BBQ  | Unqover | 
 |-------|--------|--------|--------|--------|--------|
-| BASE   |   |   |   |   |  |
-| LoRA   |   |   |   |   |  |
-| $\Delta$ LoRA   |   |   |   |   |  |
-| Ext-sub   |   |   |   |   |  |
-| $DBFT_{prom}$   |   |   |   |   |  |
-| $DBFT_{data}$   |   |   |   |   |  |
+| BASE   | 87.22  | 89.98  | 77.33  | 79.44  | 70.18  |
+| LoRA   | 94.15  | 86.24  | 73.16  | 98.85  | 93.24  |
+| $\Delta$ LoRA   | 92.26  | 89.43  | 74.56  | 85.64  | 61.10  |
+| Ext-sub   | 93.20  | 85.71  | 75.50  | 95.32  | 94.51  |
+| $DBFT_{prom}$   | 94.10  | 94.61  | 80.29  | 98.50  | 95.23  |
+| $DBFT_{data}$   | 94.25  | 95.29  | 80.45  | 99.40  | 96.78  |
 
 # The results of reviewer-suggested baselines.
 Note that: 1) PEFTDebias requires full fine-tuning models on downstream tasks. To avoid this costly process, we combine CDA with PEFT on the upstream tasks and omit the fine-tuning step on the downstream task. 2) SOD requires full fine-tuning models and only focuses on mitigating position bias. ADEPT relies on neutral and attribute token tuples, limiting it to single social stereotypes (e.g., gender, age). AIM-Fair, designed for the image domain with full fine-tuning (feasible for ResNet-18 but impractical for Qwen2-7B). Thus they are excluded for fairness and feasibility reasons. Besides, we reprt the results of mixed bias in NLI task and the results on the lexical overlap subset of HANS.
