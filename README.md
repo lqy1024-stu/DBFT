@@ -11,6 +11,9 @@ eval —— evaluation function
 
 Fine-tuning based on Lora：https://github.com/hiyouga/LLaMA-Factory
 
+# More detailed training param.
+LoRA rank=8, the max token length=1024, dropout=0.0, temperature=0.7, top_k=20, top_p=0.8.
+
 # The result under different θ, DBFT is insensitive to θ.
 Note that we reprt the results of mixed bias in NLI task and the results on the lexical overlap subset of HANS.
 | Bias type | MNLI | HANS | ANLI | BBQ  | Unqover |
